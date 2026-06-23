@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Grand Central Vascular Surgery</title>
+<link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:wght@400;600&family=Helvetica+Neue&display=swap" rel="stylesheet">
+<style>
+  *{box-sizing:border-box;}
+  body{
+    margin:0;
+    background:#ffffff;
+    color:#1a1a1a;
+    font-family:'Helvetica Neue',Arial,sans-serif;
+    font-weight:300;
+    line-height:1.6;
+    font-size:16px;
+  }
+  .wrap{max-width:70%;margin:0 auto;padding:0;}
+  header{
+    padding:28px 0;
+    border-bottom:1px solid #eaeaea;
+    position:sticky;
+    top:0;
+    background:#ffffff;
+    z-index:100;
+  }
+  .nav-inner{display:flex;justify-content:space-between;align-items:center;}
+  .brand{
+    font-family:'Source Serif 4',serif;
+    font-size:20px;
+    text-decoration:none;
+    color:#1a1a1a;
+    letter-spacing:0.01em;
+  }
+  nav a{
+    margin-left:32px;
+    font-size:13px;
+    letter-spacing:0.08em;
+    text-transform:uppercase;
+    color:#1a1a1a;
+    text-decoration:none;
+  }
+  nav a:hover{text-decoration:underline;}
+
+  .hero{padding:70px 0 40px;text-align:center;}
+  .hero h1{
+    font-family:'Source Serif 4',serif;
+    font-weight:400;
+    font-size:34px;
+    max-width:680px;
+    margin:0 auto 40px;
+    line-height:1.3;
+  }
+  .hero-img{width:100%;height:380px;object-fit:cover;background:#ddd;display:block;}
+  .hero-text{max-width:640px;margin:40px auto 0;font-size:16px;color:#333;text-align:left;}
+
+  .logos{display:flex;justify-content:center;gap:60px;align-items:center;padding:40px 0 70px;flex-wrap:wrap;}
+  .logos img{height:50px;width:auto;max-width:160px;object-fit:contain;}
+
+  section{padding:70px 0;}
+  h2.section-title{
+    font-family:'Source Serif 4',serif;
+    font-weight:400;
+    font-size:28px;
+    margin:0 0 40px;
+  }
+
+  .bio-grid{display:grid;grid-template-columns:280px 1fr;gap:50px;align-items:start;}
+  .bio-img{width:100%;height:340px;object-fit:cover;background:#ddd;display:block;}
+  .bio-name{
+    font-family:'Source Serif 4',serif;
+    font-style:italic;
+    font-size:22px;
+    margin:0 0 20px;
+  }
+  .bio-grid p{font-size:16px;color:#222;margin:0 0 18px;}
+
+  .cred-section h3{
+    font-family:'Source Serif 4',serif;
+    font-size:18px;
+    font-weight:600;
+    margin:36px 0 10px;
+  }
+  .cred-section h3:first-of-type{margin-top:0;}
+  .cred-section p{margin:0 0 6px;font-size:15.5px;color:#222;}
+
+  footer{
+    padding:0;
+  }
+  .foot-img{width:100%;height:280px;object-fit:cover;background:#ddd;display:block;}
+  .foot-content{
+    text-align:center;
+    padding:50px 0 60px;
+  }
+  .foot-content .brand{
+    display:block;
+    font-size:22px;
+    margin-bottom:18px;
+  }
+  .foot-content p{margin:4px 0;font-size:15px;color:#333;}
+  .foot-content a{color:#333;text-decoration:none;}
+  .foot-content a:hover{text-decoration:underline;}
+
+  .contact-form{max-width:520px;margin:0 auto 50px;text-align:left;}
+  .contact-form label{
+    display:block;
+    font-size:12px;
+    letter-spacing:0.06em;
+    text-transform:uppercase;
+    color:#666;
+    margin-bottom:6px;
+  }
+  .contact-form .field{margin-bottom:20px;}
+  .contact-form input,
+  .contact-form textarea{
+    width:100%;
+    padding:11px 12px;
+    font-size:15px;
+    font-family:'Helvetica Neue',Arial,sans-serif;
+    border:1px solid #ccc;
+    border-radius:2px;
+    background:#fff;
+    color:#1a1a1a;
+  }
+  .contact-form input:focus,
+  .contact-form textarea:focus{outline:none;border-color:#1a1a1a;}
+  .contact-form textarea{resize:vertical;min-height:120px;}
+  .contact-form button{
+    font-family:'Helvetica Neue',Arial,sans-serif;
+    font-size:13px;
+    letter-spacing:0.08em;
+    text-transform:uppercase;
+    background:#1a1a1a;
+    color:#fff;
+    border:none;
+    padding:13px 28px;
+    cursor:pointer;
+    border-radius:2px;
+  }
+  .contact-form button:hover{background:#333;}
+  .form-note{font-size:13px;color:#888;margin-top:14px;}
+
+  .map-embed{width:100%;height:380px;border:0;display:block;}
+
+  @media (max-width:680px){
+    .wrap{max-width:88%;}
+    .bio-grid{grid-template-columns:1fr;}
+    nav a{margin-left:16px;}
+    .hero h1{font-size:26px;}
+    .logos{flex-wrap:wrap;gap:24px;}
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <div class="wrap nav-inner">
+    <a class="brand" href="#top">Grand Central Vascular Surgery</a>
+    <nav>
+      <a href="#bio">Bio</a>
+      <a href="#credentials">Credentials</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </div>
+</header>
+
+<a id="top"></a>
+<section class="hero" style="border-top:none;">
+  <div class="wrap">
+    <h1>Expert and personalized vascular care in New York City.</h1>
+    <img class="hero-img" src="https://hmcarchitects.com/wp-content/uploads/4-Doctor-refresh-collaboration-zone-1280x946.jpg" alt="Office">
+    <div class="hero-text">
+      <p>Dr. Thomas Qin is a board-certified vascular surgeon offering personalized care, where patients come first. With 41 years of experience , Dr. Qin provides comprehensive surgical and medical management for complex vascular disease. He is based near the Grand Central station with hospital affiliations including Beth Israel Medical Center, Lenox Hill Hospital, and Saint John's Episcopal Hospital.</p>
+    </div>
+    <div class="logos">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/a/aa/Mount_Sinai_Beth_Israel_Logo.png" alt="Beth Israel Medical Center">
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQxkE8y7lnqpjONw8Oz75NLA3UN1pFDF8pMXA&s" alt="Saint John's Episcopal Hospital">
+      <img src="https://lenoxhill.northwell.edu/sites/northwell.edu/files/2023-07/LHH_Logo_web_header_805wx157h_RGB.png" alt="Lenox Hill Hospital">
+    </div>
+  </div>
+</section>
+
+<a id="bio"></a>
+<section>
+  <div class="wrap">
+    <h2 class="section-title">Bio</h2>
+    <div class="bio-grid">
+      <img class="bio-img" src="https://media.gettyimages.com/id/1567296841/photo/portrait-asian-male-nurse-looking-at-camera-smiling-standing-in-front-of-doctors-office.jpg?s=612x612&w=gi&k=20&c=z_VMZRTNboFZFDUrk0l-uEBsnQEpQkOjPndA4qfXDtA=" alt="Dr. Thomas Qin">
+      <div>
+        <p class="bio-name">Dr. Thomas Qin</p>
+        <p>Dr. Qin is a vascular surgeon with 41 years of experience treating conditions affecting the blood vessels throughout the body. He focuses on the surgical and medical management of vascular disease, helping patients with problems related to arteries, veins, and circulation. His extensive experience allows him to provide comprehensive care for complex vascular conditions that require specialized surgical expertise.</p>
+        <p>Dr. Qin completed his medical education at Shanghai Medical University and his residency training at the University of South Alabama. He practices at multiple locations throughout New York, including affiliations with Beth Israel Medical Center, Lenox Hill Hospital, and Saint John's Episcopal Hospital. His practice locations span from Manhattan to Far Rockaway, providing accessible vascular care across the region.</p>
+        <p>He speaks Chinese and Spanish in addition to English, enabling him to communicate effectively with diverse patient populations.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<a id="credentials"></a>
+<section id="credentials" class="cred-section">
+  <div class="wrap">
+    <h2 class="section-title">Credentials</h2>
+
+    <h3>Experience</h3>
+    <p>41 years treating vascular disease</p>
+
+    <h3>Hospital Affiliations</h3>
+    <p>Beth Israel Medical Center</p>
+    <p>Lenox Hill Hospital</p>
+    <p>Saint John's Episcopal Hospital</p>
+
+    <h3>Education and Training</h3>
+    <p>M.D., Shanghai Medical University</p>
+    <p>Residency, University of South Alabama</p>
+
+    <h3>Languages Spoken</h3>
+    <p>English, Chinese, Spanish</p>
+  </div>
+</section>
+
+<a id="contact"></a>
+<section style="text-align:center;">
+  <div class="wrap">
+    <h2 class="section-title">Contact</h2>
+    <form class="contact-form" action="https://formsubmit.co/info@example.com" method="POST">
+      <input type="hidden" name="_subject" value="New inquiry from Grand Central Vascular Surgery website">
+      <input type="hidden" name="_template" value="table">
+      <input type="hidden" name="_next" value="https://example.com/thank-you">
+      <div class="field">
+        <label for="name">Name</label>
+        <input type="text" id="name" name="name" required>
+      </div>
+      <div class="field">
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" required>
+      </div>
+      <div class="field">
+        <label for="phone">Phone (optional)</label>
+        <input type="tel" id="phone" name="phone">
+      </div>
+      <div class="field">
+        <label for="message">Message</label>
+        <textarea id="message" name="message" required></textarea>
+      </div>
+      <button type="submit">Send message</button>
+      <p class="form-note">Messages are sent directly to our office and typically answered within one business day.</p>
+    </form>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <img class="foot-img" src="https://media.architecturaldigest.com/photos/5b72fa14766f8c675f67bfb0/16:9/w_2240,c_limit/3%20-%20MC.jpg" alt="New York">
+    <div class="foot-content">
+      <span class="brand">Grand Central Vascular Surgery</span>
+      <p>[Street address, New York, NY]</p>
+      <p><a href="mailto:info@example.com">[email]</a></p>
+      <p>[phone number]</p>
+    </div>
+    <iframe class="map-embed" src="https://maps.google.com/maps?q=Grand%20Central%20Terminal%2C%20New%20York%2C%20NY&t=&z=15&ie=UTF8&iwloc=&output=embed" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+  </div>
+</footer>
+
+</body>
+</html>
